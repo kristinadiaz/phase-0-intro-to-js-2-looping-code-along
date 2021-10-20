@@ -1,3 +1,7 @@
+/*for(let age = 30; age < 40; age++) {
+    console.log(`I'm ${age} years old. Happy birthday to me!`);
+}*/
+
 /*const gifts = ["teddy bear", "drone", "doll"];
 
 function wrapGifts(gifts) {
@@ -10,17 +14,29 @@ function wrapGifts(gifts) {
 wrapGifts(gifts);*/
 
 function writeCards(names, event) {
-    let messages = [];
+    const newCards= [];
     for(let i = 0; i < names.length; i++) {
-        messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+        newCards.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
     }
-    return messages;
+    return newCards;
 }
 
-function countDown(positiveInt) {
-    while(positiveInt >= 0) {
-        console.log(positiveInt);
-        positiveInt--;
+/*const gifts = ["teddy bear", "drone", "doll"];
+
+function wrapGifts(gifts) {
+    let i = 0;
+    while(i < gifts.length) {
+        console.log(`Wrapped ${gifts[i]} and added a bow!`);
+        i++;
+    }
+    return gifts;
+}
+
+wrapGifts(gifts);*/
+
+function countDown() {
+    let i = 0;
+    while(i < 11) {
+        console.log(i++);
     }
 }
-  
